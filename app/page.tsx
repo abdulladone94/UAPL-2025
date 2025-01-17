@@ -1,38 +1,41 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { generateDummyData, Team, Player } from '../utils/generateDummyData'
-import { useSearch } from '../hooks/useSearch'
-import { Header } from '../components/Header'
-import { SearchBar } from '../components/SearchBar'
-import { TeamCard } from '../components/TeamCard'
-import { FloatingActionButton } from '../components/FloatingActionButton'
-import { ThemeProvider } from "next-themes"
+import { useState, useEffect } from "react";
+import { generateDummyData, Team, Player } from "../utils/generateDummyData";
+import { useSearch } from "../hooks/useSearch";
+import { Header } from "../components/Header";
+import { SearchBar } from "../components/SearchBar";
+import { TeamCard } from "../components/TeamCard";
+import { FloatingActionButton } from "../components/FloatingActionButton";
+import { ThemeProvider } from "next-themes";
 
 export default function Home() {
-  const [teams, setTeams] = useState<Team[]>([])
-  const { searchTerm, searchResult, handleSearch } = useSearch(teams)
-  const [highlightedPlayer, setHighlightedPlayer] = useState<Player | null>(null)
+  const [teams, setTeams] = useState<Team[]>([]);
+  const { searchTerm, searchResult, handleSearch } = useSearch(teams);
+  const [highlightedPlayer, setHighlightedPlayer] = useState<Player | null>(
+    null
+  );
 
   useEffect(() => {
-    setTeams(generateDummyData())
-  }, [])
+    setTeams(generateDummyData());
+  }, []);
 
   const handleFindMyTeam = () => {
-    const randomTeam = teams[Math.floor(Math.random() * teams.length)]
-    const randomPlayer = randomTeam.players[Math.floor(Math.random() * randomTeam.players.length)]
-    setHighlightedPlayer(randomPlayer)
-    handleSearch(randomPlayer.name)
-  }
+    const randomTeam = teams[Math.floor(Math.random() * teams.length)];
+    const randomPlayer =
+      randomTeam.players[Math.floor(Math.random() * randomTeam.players.length)];
+    setHighlightedPlayer(randomPlayer);
+    handleSearch(randomPlayer.name);
+  };
 
   useEffect(() => {
     if (searchResult) {
-      const teamElement = document.getElementById(searchResult.team.name)
+      const teamElement = document.getElementById(searchResult.team.name);
       if (teamElement) {
-        teamElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        teamElement.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     }
-  }, [searchResult])
+  }, [searchResult]);
 
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -62,9 +65,8 @@ export default function Home() {
             ))}
           </div>
         </main>
-        <FloatingActionButton onClick={handleFindMyTeam} />
+        {/* <FloatingActionButton onClick={handleFindMyTeam} /> */}
       </div>
     </ThemeProvider>
-  )
+  );
 }
-
