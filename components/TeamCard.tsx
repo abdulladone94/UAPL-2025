@@ -1,7 +1,7 @@
-import { Card } from "@/components/ui/card"
-import { BoltIcon as Bat, CircleDot } from 'lucide-react'
-import Image from "next/image"
-import { Team, Player } from "../utils/generateDummyData"
+import { Card } from "@/components/ui/card";
+import { BoltIcon as Bat, CircleDot } from "lucide-react";
+import Image from "next/image";
+import { Team, Player } from "../utils/generateDummyData";
 
 interface TeamCardProps {
   team: Team;
@@ -36,8 +36,8 @@ export function TeamCard({ team, highlightedPlayer }: TeamCardProps) {
                 <div className="flex items-center gap-4">
                   <span className="w-6 text-pink-300">{index + 1}.</span>
                   <span className="font-semibold">{player.name}</span>
-                  {index === 2 && <span className="text-xs text-pink-300">(C)</span>}
-                  {index === 4 && <span className="text-xs text-pink-300">(WK)</span>}
+                  {/* {index === 2 && <span className="text-xs text-pink-300">(C)</span>}
+                  {index === 4 && <span className="text-xs text-pink-300">(WK)</span>} */}
                 </div>
                 <div className="text-pink-300">
                   {index < 6 ? (
@@ -52,6 +52,5 @@ export function TeamCard({ team, highlightedPlayer }: TeamCardProps) {
         </div>
       </div>
     </Card>
-  )
+  );
 }
-
