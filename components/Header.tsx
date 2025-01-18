@@ -18,7 +18,7 @@ export function Header() {
             className="h-12 w-auto mx-10"
           />
           <h1 className="text-xl font-bold hidden md:block">
-            UlUl ARHAM PREMIER LEAGUE 2025 TEAMS
+            ULUL ARHAM PREMIER LEAGUE 2025 TEAMS
           </h1>
         </div>
         <Button
@@ -26,7 +26,7 @@ export function Header() {
           size="icon"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
-          {theme === "dark" ? <MoonIcon /> : <SunIcon />}
+          {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           <span className="sr-only">Toggle theme</span>
         </Button>
       </div>
