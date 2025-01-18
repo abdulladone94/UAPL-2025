@@ -11,7 +11,7 @@ export interface Team {
 export function generateDummyData(): Team[] {
   return [
     {
-      name: "Unity Strikers",
+      name: "Galle Marvels",
       players: [
         { id: "A-1", name: "Sajid Hassan" },
         { id: "A-2", name: "AbdurRahman Safavi" },
@@ -23,7 +23,6 @@ export function generateDummyData(): Team[] {
         { id: "A-8", name: "Abdul Basith Fawas" },
         { id: "A-9", name: "Iflal Ashraf" },
         { id: "A-10", name: "Kafi" },
-        { id: "A-11", name: "Umar Anees" },
       ],
     },
     {
@@ -35,11 +34,10 @@ export function generateDummyData(): Team[] {
         { id: "B-4", name: "Musthafa Safavi" },
         { id: "B-5", name: "Maazin Faheem" },
         { id: "B-6", name: "Fazlan Rizny" },
-        { id: "B-7", name: "Ashfac Mujeeburrahman" },
-        { id: "B-8", name: "Shuaib Fuyuse" },
-        { id: "B-9", name: "Mohamed Faik" },
-        { id: "B-10", name: "Raza Hussain" },
-        { id: "B-11", name: "Sabry Yousuf" },
+        { id: "B-7", name: "Shuaib Fuyuse" },
+        { id: "B-8", name: "Mohamed Faik" },
+        { id: "B-9", name: "Raza Hussain" },
+        { id: "B-10", name: "Sabry Yousuf" },
       ],
     },
     {
@@ -52,10 +50,9 @@ export function generateDummyData(): Team[] {
         { id: "C-5", name: "Alqamah Safavy" },
         { id: "C-6", name: "Younus Faiz" },
         { id: "C-7", name: "Insaaf" },
-        { id: "C-8", name: "Aathik Mujeeburrahman" },
-        { id: "C-9", name: "Abdul Rahman Mafhum" },
-        { id: "C-10", name: "Shafy" },
-        { id: "C-11", name: "Aslam" },
+        { id: "C-8", name: "Abdul Rahman Mafhum" },
+        { id: "C-9", name: "Shafy" },
+        { id: "C-10", name: "Aslam" },
       ],
     },
     {
@@ -67,11 +64,10 @@ export function generateDummyData(): Team[] {
         { id: "D-4", name: "Fawas Dishty" },
         { id: "D-5", name: "Aamir Safavi" },
         { id: "D-6", name: "Ibrahim Muhammed" },
-        { id: "D-7", name: "Mohamed Hilal" },
-        { id: "D-8", name: "Zaweer Fazeel" },
-        { id: "D-9", name: "Milhan Fazeel" },
-        { id: "D-10", name: "Shakil Rizwan" },
-        { id: "D-11", name: "Muhammed Firdhouse" },
+        { id: "D-7", name: "Abdulla Shifai" },
+        { id: "D-8", name: "Milhan Fazeel" },
+        { id: "D-9", name: "Shakil Rizwan" },
+        { id: "D-10", name: "Muhammed Firdhouse" },
       ],
     },
     {
@@ -86,8 +82,7 @@ export function generateDummyData(): Team[] {
         { id: "E-7", name: "Abdulrahman Fawas" },
         { id: "E-8", name: "Hamid Fazul Rahman" },
         { id: "E-9", name: "Abdulrahman" },
-        { id: "E-10", name: "Sulaim" },
-        { id: "E-11", name: "Ashik Mujeeburrahman" },
+        { id: "E-10", name: "Zaid" },
       ],
     },
     {
@@ -100,10 +95,9 @@ export function generateDummyData(): Team[] {
         { id: "F-5", name: "Mufallal Ziyaard" },
         { id: "F-6", name: "Ayman Shukoor" },
         { id: "F-7", name: "Hilal Ashraf" },
-        { id: "F-8", name: "Ifam" },
+        { id: "F-8", name: "Mohideen Mulaffar" },
         { id: "F-9", name: "Ihsan Amzer" },
-        { id: "F-10", name: "Zaid" },
-        { id: "F-11", name: "Mohideen Mulaffar" },
+        { id: "F-10", name: "Sulaim" },
       ],
     },
     {
@@ -119,11 +113,10 @@ export function generateDummyData(): Team[] {
         { id: "G-8", name: "Umair Ifham" },
         { id: "G-9", name: "Amir Amzal" },
         { id: "G-10", name: "Thalha" },
-        { id: "G-11", name: "Zakir Fazeel" },
       ],
     },
     {
-      name: "Together Titans",
+      name: "Unity Strikers",
       players: [
         { id: "H-1", name: "Arqam Rila" },
         { id: "H-2", name: "Muhammed Shuaib" },
@@ -132,10 +125,9 @@ export function generateDummyData(): Team[] {
         { id: "H-5", name: "Faik Hussain" },
         { id: "H-6", name: "Fazul Rahman" },
         { id: "H-7", name: "Ammar Firdhouse" },
-        { id: "H-8", name: "Musab Hilal" },
+        { id: "H-8", name: "Ayyoob" },
         { id: "H-9", name: "Luqman Sabry" },
         { id: "H-10", name: "Faheem Nilamdeen" },
-        { id: "H-11", name: "Yahya Fais" },
       ],
     },
   ];
