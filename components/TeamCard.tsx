@@ -36,16 +36,18 @@ export function TeamCard({ team, highlightedPlayer }: TeamCardProps) {
                 <div className="flex items-center gap-4">
                   <span className="w-6 text-pink-300">{index + 1}.</span>
                   <span className="font-semibold">{player.name}</span>
-                  {/* {index === 2 && <span className="text-xs text-pink-300">(C)</span>}
-                  {index === 4 && <span className="text-xs text-pink-300">(WK)</span>} */}
+                  {index === 0 && (
+                    <span className="text-xs text-pink-300">(C)</span>
+                  )}
+                  {/* {index === 4 && <span className="text-xs text-pink-3  00">(WK)</span>} */}
                 </div>
-                <div className="text-pink-300">
+                {/* <div className="text-pink-300">
                   {index < 6 ? (
                     <Bat className="h-4 w-4" />
                   ) : (
                     <CircleDot className="h-4 w-4" />
                   )}
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

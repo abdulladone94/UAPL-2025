@@ -8,27 +8,27 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between">
+      <div className="container flex h-20 items-center justify-center">
         <div className="flex items-center gap-4">
-          <Image
+          {/* <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-B5qXrsNUK3tvElD9RrGaC6lKV1LntN.png"
             alt="UlUl Arham Premier League"
             width={60}
             height={60}
             className="h-12 w-auto mx-10"
-          />
-          <h1 className="text-xl font-bold hidden md:block">
-            UlUl ARHAM PREMIER LEAGUE 2025 TEAMS
+          /> */}
+          <h1 className="text-lg text-center md:text-4xl font-bold ">
+            ULUL ARHAM PREMIER LEAGUE 2025 TEAMS
           </h1>
         </div>
-        <Button
+        {/* <Button
           variant="ghost"
           size="icon"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => setTheme(theme === "dark" ? "dark" : "light")}
         >
-          {theme === "dark" ? <MoonIcon /> : <SunIcon />}
+          {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           <span className="sr-only">Toggle theme</span>
-        </Button>
+        </Button> */}
       </div>
     </header>
   );
